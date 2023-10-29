@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - PuddingFest 2023</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Registration Form -->
+
+    <section class="registration" id="registration">
+        <h1 class="title">Registration Form</h1>
+
+        <form action="" class="registration-form" id="registration-form">
+            <div class="error" id="error"></div>
+            <div class="alert">Registered Successfully!</div>
+            <div class="register">
+                <label class="label" for="name">Full Name</label>
+                <input class="input" type="text" placeholder="Your Name" id="name">
+            </div>
+            <div class="register">
+                <label class="label" for="email">Email</label>
+                <input class="input" type="email" placeholder="Your Email" id="email">
+            </div>
+            <div class="register">
+                <label class="label" for="phone">Phone Number</label>
+                <input class="input" type="tel" placeholder="Your Phone Number" id="phone">
+            </div>
+            <div class="register">
+                <label class="label" for="ticket">Ticket</label>
+                <select class="input" name="ticket" id="ticket">
+                    <option value="Technology Conference">Technology Conference</option>
+                    <option value="Technology Workshop">Technology Workshop</option>
+                    <option value="Hackathon">Hackathon</option>
+                </select>
+                <!-- <input class="input" type="dr" placeholder="Your name" id="name"> -->
+            </div>
+            <div class="register-button" id="register-button">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.3/firebase.js"></script>
+  <script src="script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+*{
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242529;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin: 50px 0px 30px 0px;
+}
+
+
+
+
+/* Hero */
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text{
+    color: white;
+    text-align: center;
+}
+
+.hero-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.time{
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    width: 200px;
+}
+
+/* Events */
+.events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-container{
+    margin: 50px 20px;
+    width: 75%;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    row-gap: 30px;
+}
+
+/* timeline */
+
+
+.textbox h5{
+    margin: 0px;
+}
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+
+.timeline-container{
+    padding: 10px 50px;
+    /* width: 50%; */
+    background: blue;
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    padding: 20px 30px;
+    background: #1B1E23;
+    position: relative;
+    border-radius: 6px;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 85%;
+    background: #EB3D7A;
+    top: 50px;
+    left: 0px;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: -9px;
+    background: #EB3D7A;
+}
+
+.timeline-option{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.button-conference{
+    text-align: center;
+    color: white;
+    background-color: #2F262E;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.button-workshop{
+    text-align: center;
+    color: white;
+    background-color: #2F262E;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.button-hackathon{
+    text-align: center;
+    color: white;
+    background-color: #2F262E;
+    border-radius: 20px;
+    padding: 23px 20px;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.button-conference::after{
+    color: #EB3D7A;
+}
+/* .textbox{
+    color: white;
+    padding: 20px 30px;
+    background: #1B1E23;
+    position: relative;
+    border-radius: 6px;
+} */
+
+.label{
+    color: white;
+}
+
+.registration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.registration-form{
+    margin-top: 15px;
+    padding: 50px 20px;
+    background-color: #3b3c3d;
+    width: 75%;
+    height: auto;
+}
+
+.input{
+    background-color: #191A1F;
+    padding: 10px 10px;
+    border: #212429;
+    color: white;
+    width: 100%;
+}
+
+.input::placeholder{
+    color: #4C4A5F;
+}
+
+.label{
+    margin-bottom: 5px;
+}
+
+.register-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-button button{
+    background: #EB3D7A;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border: none;
+}
+
+.alert{
+    width: 100%;
+    background-color: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.error{
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    display: none;
+    color: white;
+}
+
+/* Contact Us */
+.contact-text{
+    color: white;
+}
+
+.contact-us{
+    background-color: #1B1E23;
+}
+
+.contact-container{
+    padding: 20px 0px 20px 20px;
+}
+
+.contact-container h4{
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 426px){
+
+    .contact-text{
+        font-size: 0.875em;
+    }
+
+    .button-conference{
+        font-size: 0.875em;
+    }
+   
+    .button-workshop{
+        font-size: 0.875em;
+    }
+   
+    .button-hackathon{
+        font-size: 0.875em;
+    }
+
+    .textbox h5{
+        font-size: 0.875em;
+    }
+
+    .time{
+        font-size: 0.750em;
+        width: 200px;
+    }
+}
